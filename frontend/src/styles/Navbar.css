@@ -1,0 +1,28 @@
+/* Navbar specific styles */
+.nav-links a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color .3s ease;
+}
+
+.nav-links a:hover {
+  color: #ff6f00;
+}
+
+.hamburger-btn {
+  display: none;
+}
+
+.mobile-menu.active {
+  display: flex;
+}
+
+@media(max-width:768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .hamburger-btn {
+    display: flex;
+  }
+}

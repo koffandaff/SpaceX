@@ -1,0 +1,18 @@
+/* ScientistDashboard specific styles */
+.scientist-main {
+  max-width: 1200px;
+  margin: 80px auto 3rem;
+  padding: 1.5rem;
+}
+
+.model-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.training-config-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}

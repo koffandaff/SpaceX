@@ -1,0 +1,6 @@
+/* Auth page specific styles */
+.auth-main {
+  max-width: 500px;
+  margin: 100px auto 3rem;
+  padding: 1.5rem;
+}

@@ -1,0 +1,56 @@
+/* RESULTS PAGE */
+.results-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.candidate-card {
+  background: rgba(0, 0, 0, 0.9);
+  border: 2px solid #00ffff;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  transition: all 0.3s ease;
+}
+
+.candidate-card:hover {
+  box-shadow: 0 0 25px #00ffff;
+  transform: translateY(-3px);
+}
+
+.confidence-high {
+  border-left: 5px solid #00ff00;
+}
+
+.confidence-medium {
+  border-left: 5px solid #ffff00;
+}
+
+.confidence-low {
+  border-left: 5px solid #ff0000;
+}
+
+.metrics-panel {
+  background: rgba(0, 0, 0, 0.9);
+  border: 2px solid #00ffff;
+  padding: 2rem;
+}
+
+.metric-item {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid rgba(0, 255, 255, 0.3);
+}
+
+.visualization-area {
+  background: rgba(0, 0, 0, 0.8);
+  border: 2px solid #00ffff;
+  padding: 2rem;
+  margin: 2rem 0;
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

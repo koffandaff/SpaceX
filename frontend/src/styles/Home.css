@@ -1,0 +1,8 @@
+/* Home page specific styles */
+.home-main {
+  max-width: 1200px;
+  margin: 80px auto 3rem;
+  padding: 1.5rem;
+  color: #eee;
+  position: relative;
+}
