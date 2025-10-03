@@ -166,6 +166,7 @@ graph TB
     style M fill:#7c3aed,color:#fff
     style P fill:#10b981,color:#fff
 ```
+---
 
 ### Authentication & Authorization Flow
 
@@ -202,6 +203,7 @@ sequenceDiagram
         UI->>Router: Navigate to Role-Specific Dashboard
     end
 ```
+---
 
 ### Multi-File Batch Processing Workflow
 
@@ -282,6 +284,7 @@ graph TB
     style J fill:#f59e0b,color:#000
     style P fill:#10b981,color:#fff
 ```
+---
 
 ### Real-time Prediction Workflow
 
@@ -318,6 +321,7 @@ sequenceDiagram
     Frontend->>Frontend: Display Charts & Statistical Summary
     Frontend->>User: Present Final Analysis Dashboard
 ```
+---
 
 ### Model Performance Characteristics
 
@@ -329,6 +333,7 @@ xychart-beta
     bar [94.2, 93.5, 92.8, 96.1]
     line [94.2, 93.5, 92.8, 96.1]
 ```
+---
 
 ### Feature Importance Analysis
 
@@ -377,6 +382,7 @@ graph TB
     style D fill:#10b981,color:#fff
     style I fill:#8b5cf6,color:#fff
 ```
+---
 
 ### Request-Response Flow
 
@@ -412,6 +418,7 @@ sequenceDiagram
     F->>C: 200 OK with Full Analysis
     Note over F,C: JSON response includes:<br/>- Predictions<br/>- Statistics<br/>- Visualizations<br/>- Model Metadata
 ```
+---
 
 ### Core API Endpoints Specification
 
@@ -459,6 +466,7 @@ sequenceDiagram
   }
 }
 ```
+---
 
 #### ℹ️ System Information Endpoints
 - **Model Information**: `GET /api/models` - Returns loaded model status and metadata
@@ -495,6 +503,7 @@ graph TB
     style A fill:#3b82f6,color:#fff
     style E fill:#10b981,color:#fff
 ```
+---
 
 **Step-by-step commands:**
 ```bash
@@ -515,6 +524,7 @@ ls ml_models/
 # Start the backend server
 python app.py
 ```
+---
 
 ### Frontend Setup Procedure
 
@@ -528,6 +538,7 @@ graph TB
     style B fill:#3b82f6,color:#fff
     style E fill:#10b981,color:#fff
 ```
+---
 
 **Step-by-step commands:**
 ```bash
@@ -542,6 +553,7 @@ npm run dev
 
 # Application accessible at http://localhost:3000
 ```
+---
 
 ### Project Structure Overview
 
@@ -583,20 +595,34 @@ spaceex/
 
 ```mermaid
 journey
-    title SpaceEx User Experience Journey
-    section Authentication & Access
-      Visit Platform: 5: User
-      Complete Authentication: 4: User
-      Access Role-Specific Dashboard: 5: User
-    section Data Analysis
-      Upload Astronomical Data: 5: User
-      Configure Analysis Parameters: 4: User
-      Execute ML Processing: 5: User
-    section Results & Insights
-      Review Prediction Results: 5: User
-      Explore Detailed Analysis: 4: User
-      Export Findings: 3: User
+    title SpaceEx Complete User Journey
+    section Discovery & Onboarding
+      Discover Platform: 5: User
+      Understand Capabilities: 4: User
+      Create Account: 4: User
+      Complete Setup: 5: User
+    section Data Preparation
+      Prepare Dataset: 4: User
+      Upload Files: 5: User
+      Validate Data: 4: User
+      Select Analysis Type: 5: User
+    section Analysis Execution
+      Choose ML Model: 5: User
+      Configure Parameters: 4: User
+      Run Processing: 5: User
+      Monitor Progress: 4: User
+    section Results Exploration
+      View Overview: 5: User
+      Analyze Details: 5: User
+      Compare Results: 4: User
+      Generate Reports: 3: User
+    section Action & Export
+      Save Analysis: 4: User
+      Export Data: 3: User
+      Share Findings: 3: User
+      Plan Next Steps: 4: User
 ```
+---
 
 ### Analysis Workflow
 
@@ -627,26 +653,27 @@ graph TB
     style H fill:#44ffff,color:#000
     style O fill:#96ceb4,color:#000
 ```
+---
 
 ### Input Data Requirements
 
 **Required CSV Features:**
-- `period` - Orbital period in days
-- `planet_radius` - Planetary radius in Earth radii
-- `depth` - Transit depth in parts per million
-- `equilibrium_temp` - Planetary equilibrium temperature
-- `insolation` - Stellar insolation flux
-- `impact` - Impact parameter
-- `duration` - Transit duration in hours
-- `star_radius` - Stellar radius in Solar radii
-- `star_mass` - Stellar mass in Solar masses
-- `star_teff` - Stellar effective temperature
-- `kepmag` - Kepler magnitude
-- `planet_density_ratio` - Planetary density ratio
-- `log_period` - Logarithm of orbital period
-- `stellar_flux` - Stellar flux measurement
-- `temp_ratio` - Temperature ratio
-
+- `period` - Orbital period in days <br>
+- `planet_radius` - Planetary radius in Earth radii <br>
+- `depth` - Transit depth in parts per million <br>
+- `equilibrium_temp` - Planetary equilibrium temperature <br>
+- `insolation` - Stellar insolation flux <br>
+- `impact` - Impact parameter <br>
+- `duration` - Transit duration in hours <br>
+- `star_radius` - Stellar radius in Solar radii <br>
+- `star_mass` - Stellar mass in Solar masses <br>
+- `star_teff` - Stellar effective temperature <br>
+- `kepmag` - Kepler magnitude <br>
+- `planet_density_ratio` - Planetary density ratio <br>
+- `log_period` - Logarithm of orbital period <br>
+- `stellar_flux` - Stellar flux measurement <br>
+- `temp_ratio` - Temperature ratio <br>
+ --- 
 **Example Data Format:**
 ```csv
 period,planet_radius,depth,equilibrium_temp,insolation,impact,duration,star_radius,star_mass,star_teff,kepmag,planet_density_ratio,log_period,stellar_flux,temp_ratio
@@ -666,6 +693,8 @@ period,planet_radius,depth,equilibrium_temp,insolation,impact,duration,star_radi
 | **Machine Learning Engineer** | Krisha | Ensemble model development, Feature engineering, Model training pipeline |
 | **Backend & DevOps** | Akshat | FastAPI development, Deployment infrastructure, Performance optimization |
 | **Data Science Lead** | Parth | Data processing, Analytical methodologies, Scientific validation |
+
+---
 
 ### Development Methodology
 
@@ -720,6 +749,7 @@ graph TB
     style F fill:#f59e0b,color:#000
     style I fill:#10b981,color:#fff
 ```
+--
 
 ### Contribution Areas
 
@@ -742,6 +772,8 @@ graph TB
   - Database integration for large datasets
   - Caching strategies and optimization
   - Parallel processing enhancements
+
+---
 
 ### Contribution Guidelines
 1. Follow existing code style and architectural patterns
@@ -784,6 +816,7 @@ graph TB
     style B fill:#f59e0b,color:#000
     style F fill:#8b5cf6,color:#fff
 ```
+---
 
 ### Scientist Model Retraining System
 - **Dedicated Research Dashboard** - Specialized interface for data scientists and astronomers
@@ -849,23 +882,3 @@ If you use SpaceEx in your research or publications, please cite:
 
 <div align="center">
 
-*Built with ❤️ for the advancement of astronomy and open science*
-
-[![GitHub stars](https://img.shields.io/github/stars/koffandaff/spaceex?style=social)](https://github.com/koffandaff/spaceex/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/koffandaff/spaceex?style=social)](https://github.com/koffandaff/spaceex/network/members)
-[![GitHub issues](https://img.shields.io/github/issues/koffandaff/spaceex)](https://github.com/koffandaff/spaceex/issues)
-
-</div>
-
-This professional README now includes:
-
-1. **Clean, professional structure** without sprint numbers
-2. **Comprehensive tech stack** section at the beginning
-3. **Working table of contents** with proper navigation
-4. **Detailed team assignments** with specific roles
-5. **Future scope section** including the scientist model retraining system
-6. **Reduced code snippets** in favor of comprehensive mermaid diagrams
-7. **Enhanced API documentation** with detailed architecture flows
-8. **Professional tone** throughout with clear, concise explanations
-
-The README is now ready for GitHub and presents SpaceEx as a mature, professional astronomical research platform.
