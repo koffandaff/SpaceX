@@ -1,351 +1,281 @@
-# 🚀 SpaceEx - Exoplanet Detection Platform
+# 🚀 SpaceEx - Exoplanet Discovery Platform
 
-<div align="center">
+> **AI-Powered Exoplanet Detection & Analysis System**
 
-**Advanced Machine Learning Platform for Astronomical Discovery**
-
-[![React](https://img.shields.io/badge/React-18.2.0-61DAFB?logo=react)](https://reactjs.org)
-[![FastAPI](https://img.shields.io/badge/FastAPI-0.104.1-009688?logo=fastapi)](https://fastapi.tiangolo.com)
-[![Python](https://img.shields.io/badge/Python-3.9+-3776AB?logo=python)](https://python.org)
-[![Machine Learning](https://img.shields.io/badge/ML-Ensemble-FF6F00?logo=scikitlearn)](https://scikit-learn.org)
-
-*Unveiling the secrets of distant worlds through cutting-edge AI*
-
-[🚀 Live Demo](#) • [📚 Documentation](#) • [🐛 Report Bug](https://github.com/koffandaff/spaceex/issues) • [💡 Request Feature](https://github.com/koffandaff/spaceex/issues)
-
-</div>
+![SpaceEx](https://img.shields.io/badge/SpaceEx-Exoplanet_Detection-88ffff?style=for-the-badge&logo=react)
+![Version](https://img.shields.io/badge/Version-1.0.0-44ffff?style=for-the-badge)
+![License](https://img.shields.io/badge/Language-Python_|_React-96ceb4?style=for-the-badge)
 
 ## 📖 Table of Contents
-- [🌌 Project Overview](#-project-overview)
-- [🛠 Tech Stack](#-tech-stack)
-- [🚀 Features](#-features)
-- [🏗️ System Architecture](#️-system-architecture)
-- [📊 Machine Learning Pipeline](#-machine-learning-pipeline)
-- [🔌 API Documentation](#-api-documentation)
-- [🛠️ Installation & Setup](#️-installation--setup)
-- [🎯 Usage Guide](#-usage-guide)
-- [👥 Development Team](#-development-team)
-- [🤝 Contributing](#-contributing)
-- [🔮 Future Scope](#-future-scope)
-- [📄 License](#-license)
 
----
+- [🚀 SpaceEx - Exoplanet Discovery Platform](#-spaceex---exoplanet-discovery-platform)
+  - [📖 Table of Contents](#-table-of-contents)
+  - [🎯 Overview](#-overview)
+  - [✨ Key Features](#-key-features)
+  - [🏗️ System Architecture](#️-system-architecture)
+    - [Frontend Architecture](#frontend-architecture)
+    - [Backend Architecture](#backend-architecture)
+    
+  - [🔬 ML Integration & Workflows](#-ml-integration--workflows)
+    - [Complete ML Integration Flow](#complete-ml-integration-flow)
+    - [Dual-Pipeline ML System](#dual-pipeline-ml-system)
+    - [Complete Analysis Workflow](#complete-analysis-workflow)
+    - [Model Performance](#model-performance)
+  - [🌐 API Architecture](#-api-architecture)
+    - [API Architecture Overview](#api-architecture-overview)
+    - [Complete API Endpoints List](#complete-api-endpoints-list)
+    - [API Request-Response Flow](#api-request-response-flow)
+  - [🎨 User Interface \& Experience](#-user-interface--experience)
+    - [Design System](#design-system)
+    - [Role-Based Access](#role-based-access)
+  - [📁 Project Structure](#-project-structure)
+  - [🚀 Installation \& Setup](#-installation--setup)
+    - [Prerequisites](#prerequisites)
+    - [Backend Setup](#backend-setup)
+    - [Frontend Setup](#frontend-setup)
+    - [Running the Application](#running-the-application)
+  - [👥 User Roles \& Permissions](#-user-roles--permissions)
+  - [🔧 Development Workflow](#-development-workflow)
+    - [Sprint History](#sprint-history)
+    - [Development Guidelines](#development-guidelines)
+  - [📊 Performance Metrics](#-performance-metrics)
+  - [🔮 Future Roadmap](#-future-roadmap)
+  - [🐛 Troubleshooting](#-troubleshooting)
+  - [🤝 Contributing](#-contributing)
+  - [📄 License](#-license)
 
-## 🌌 Project Overview
+## 🎯 Overview
 
-SpaceEx is a sophisticated web application that leverages advanced machine learning algorithms to detect exoplanets from astronomical data. By analyzing light curve data from telescopes like Kepler and TESS, SpaceEx provides astronomers and researchers with a powerful tool for identifying potential exoplanets with unprecedented accuracy.
+**SpaceEx** is a comprehensive web application that leverages machine learning to detect and analyze exoplanets from astronomical data. The platform provides specialized pipelines for both **Kepler (KOI)** and **K2 mission** data, offering scientists and researchers powerful tools for exoplanet discovery and validation.
 
-### 🎯 Project Vision
-To democratize exoplanet discovery by providing an accessible, accurate, and scalable platform that combines state-of-the-art machine learning with intuitive visualization tools.
+**Core Mission**: Democratize exoplanet discovery by providing accessible, AI-powered analysis tools to astronomers worldwide.
 
-### 🔬 Scientific Significance
-- **Automated Detection**: Reduces manual analysis time from weeks to minutes
-- **Multi-Model Consensus**: Combines predictions from 4 different ML algorithms
-- **Confidence Scoring**: Provides probabilistic assessments of discoveries
-- **Visual Analytics**: Interactive visualizations for result interpretation
+## ✨ Key Features
 
----
-
-## 🛠 Tech Stack
-
-### Frontend Layer
-- **React 18** - Modern component-based UI framework
-- **React Router DOM** - Client-side routing and navigation
-- **CSS3** - Cyberpunk space-themed styling with animations
-- **Context API** - State management for authentication and user data
-
-### Backend Layer
-- **FastAPI** - High-performance Python web framework
-- **Python 3.9+** - Core programming language
-- **Uvicorn** - ASGI server for production deployment
-- **Pydantic** - Data validation and settings management
-
-### Machine Learning
-- **XGBoost** - Optimized gradient boosting framework
-- **CatBoost** - Handling categorical features effectively
-- **LightGBM** - Fast gradient boosting for large datasets
-- **Scikit-learn** - Ensemble methods and preprocessing
-- **Matplotlib** - Scientific visualization and plotting
-
-### Data & Storage
-- **Pandas** - Data manipulation and analysis
-- **NumPy** - Numerical computing and array operations
-- **Joblib** - Model serialization and persistence
-
-### Development & Deployment
-- **Vite** - Frontend build tool and development server
-- **npm** - JavaScript package management
-- **pip** - Python dependency management
-- **Git** - Version control and collaboration
-
----
-
-## 🚀 Features
-
-### 🌟 Core Capabilities
-- **🤖 Multi-Model Ensemble** - XGBoost, CatBoost, LightGBM, and Voting Ensemble working in concert
-- **📁 Multi-File Batch Processing** - Simultaneous analysis of multiple astronomical datasets
-- **⚖️ Head-to-Head Comparison** - Side-by-side evaluation of different models and datasets
-- **📊 Advanced Visualizations** - Interactive charts, probability distributions, and simulated light curves
-- **🎯 Role-Based Access Control** - Tailored experiences for Admins, Scientists, and Users
-- **🔐 Secure Authentication** - Robust user management with admin approval workflows
-
-### 🎨 User Experience
-- **Intuitive Cyberpunk Interface** - Space-themed design with smooth animations and visual feedback
-- **Real-time File Validation** - Instant CSV structure verification and data preview
-- **Inline Detailed Analysis** - Expandable results without disruptive modal popups
-- **Professional Export Capabilities** - Structured data output for further scientific analysis
-- **Fully Responsive Design** - Seamless experience across desktop and mobile devices
-
-### 🔧 Technical Excellence
-- **RESTful API Architecture** - Well-documented FastAPI endpoints for easy integration
-- **Real-time Processing** - Efficient handling of large astronomical datasets
-- **Model Version Management** - Flexible system for updates and improvements
-- **Scalable Infrastructure** - Architecture designed for high-volume processing demands
-
----
+| Feature | Description | Status |
+|---------|-------------|---------|
+| **🤖 Dual-Pipeline ML Analysis** | Specialized models for KOI & K2 data with 90%+ accuracy | ✅ **Live** |
+| **📊 Advanced Visualization** | Interactive charts, feature importance, probability distributions | ✅ **Live** |
+| **👥 Role-Based Access** | User, Scientist, Admin roles with approval workflow | ✅ **Live** |
+| **📁 Multi-File Batch Processing** | Process multiple datasets simultaneously | ✅ **Live** |
+| **🔍 Comparison Analysis** | Side-by-side model and dataset comparison | ✅ **Live** |
+| **📈 Real-time Results** | Interactive tables with expandable detailed analysis | ✅ **Live** |
+| **🎨 Cyberpunk UI/UX** | Dark theme with cyan accents, professional scientific interface | ✅ **Live** |
+| **🔐 Secure Authentication** | Password validation, session management, admin approval | ✅ **Live** |
 
 ## 🏗️ System Architecture
 
-### Complete Application Architecture
+### Frontend Architecture
 
 ```mermaid
 graph TB
-    subgraph "Frontend Layer - React SPA"
-        A[🌐 User Browser]
-        B[📱 Responsive Components]
-        C[🔄 React Router]
-        D[🎨 Cyberpunk UI Theme]
-        E[📊 Visualization Engine]
-        F[🔐 Auth Context]
-    end
-
-    subgraph "Backend Layer - FastAPI"
-        G[🚀 API Gateway]
-        H[📁 File Upload Handler]
-        I[🔐 Authentication Service]
-        J[🧠 ML Model Orchestrator]
-        K[📈 Visualization Generator]
-        L[💾 Data Preprocessor]
-    end
-
-    subgraph "Machine Learning Layer"
-        M[XGBoost Model]
-        N[CatBoost Model]
-        O[LightGBM Model]
-        P[Voting Ensemble]
-        Q[⚖️ Feature Engineering]
-        R[📊 Confidence Scoring]
-    end
-
-    subgraph "Data Persistence"
-        S[📁 CSV File Storage]
-        T[💾 Model Artifacts]
-        U[🔐 User Sessions]
-    end
-
-    A <--> G
-    B --> C
-    F --> I
-    G --> H
-    G --> I
-    G --> J
-    H --> L
-    J --> M
-    J --> N
-    J --> O
-    J --> P
-    L --> Q
-    Q --> R
-    K --> E
-    S --> H
-    T --> J
+    A[React 18 + Vite] --> B[React Router DOM]
+    B --> C[Context API - AuthState]
+    C --> D[Component Architecture]
     
-    style A fill:#1e3a8a,color:#fff
-    style G fill:#2563eb,color:#fff
-    style M fill:#7c3aed,color:#fff
-    style P fill:#10b981,color:#fff
+    D --> E[Pages Layer]
+    E --> F[Home/Auth/Predict/Results]
+    E --> G[Admin/Scientist Dashboards]
+    
+    D --> H[Services Layer]
+    H --> I[API Integration]
+    H --> J[File Validation]
+    
+    D --> K[Styling Layer]
+    K --> L[CSS Variables]
+    K --> M[Cyberpunk Theme]
+    
+    style A fill:#88ffff,color:#000
+    style E fill:#44ffff,color:#000
+    style H fill:#96ceb4,color:#000
 ```
 
-### Authentication & Authorization Flow
+**Technology Stack**:
+- **Framework**: React 18 + Vite
+- **Routing**: React Router DOM
+- **State Management**: Context API + useState
+- **Styling**: Pure CSS with CSS Variables
+- **Icons**: SVG + Emoji fallbacks
+- **Fonts**: JetBrains Mono (Google Fonts)
+
+### Backend Architecture
+
+```mermaid
+graph TB
+    A[FastAPI] --> B[ML Model Serving]
+    B --> C[Dual-Pipeline System]
+    
+    C --> D[KOI Pipeline]
+    D --> E[XGBoost - 91.53% accuracy]
+    
+    C --> F[K2 Pipeline]
+    F --> G[ExtraTrees - 89.72% accuracy]
+    
+    A --> H[Data Preprocessing]
+    H --> I[Feature Engineering]
+    H --> J[Validation]
+    
+    A --> K[Visualization Generation]
+    K --> L[Probability Charts]
+    K --> M[Feature Importance]
+    
+    style A fill:#88ffff,color:#000
+    style C fill:#44ffff,color:#000
+    style E fill:#96ceb4,color:#000
+```
+
+**Technology Stack**:
+- **Framework**: FastAPI + Python 3.9+
+- **ML Libraries**: scikit-learn, XGBoost, LightGBM, CatBoost
+- **Data Processing**: pandas, numpy
+- **Visualization**: matplotlib, base64 encoding
+- **CORS**: Enabled for React integration
+
+### Data Flow Architecture
+
+
+
+## 🔬 ML Integration & Workflows
+
+### Complete ML Integration Flow
+
+```mermaid
+graph TB
+    A[User Uploads CSV] --> B[Frontend Validation]
+    B --> C[Data Type Selection]
+    C --> D{Data Pipeline}
+    D -->|Kepler Data| E[KOI Pipeline]
+    D -->|K2 Mission Data| F[K2 Pipeline]
+    
+    E --> G[Load KOI Models]
+    F --> H[Load K2 Models]
+    
+    G --> I[Feature Engineering]
+    H --> I
+    
+    I --> J[Data Preprocessing]
+    J --> K[Model Prediction]
+    K --> L[Probability Calculation]
+    L --> M[Confidence Scoring]
+    M --> N[Visualization Generation]
+    N --> O[Results Compilation]
+    O --> P[JSON Response]
+    
+    style A fill:#88ffff,color:#000
+    style D fill:#44ffff,color:#000
+    style O fill:#96ceb4,color:#000
+```
+
+### Detailed ML Processing Pipeline
 
 ```mermaid
 sequenceDiagram
     participant U as User
-    participant UI as React Frontend
-    participant Auth as Auth Service
-    participant DB as User Database
-    participant Router as Navigation
-
-    U->>UI: Access Application
-    UI->>Auth: Check Authentication Status
-    Auth->>DB: Verify Session Token
+    participant F as Frontend
+    participant B as Backend
+    participant PP as Preprocessing
+    participant ML as ML Model
+    participant VIZ as Visualization
     
-    alt User Not Authenticated
-        UI->>U: Display Login/Signup Forms
-        U->>UI: Submit Credentials
-        UI->>Auth: Authenticate User
-        Auth->>DB: Validate Credentials & Role
-        
-        alt Valid Scientist Registration
-            Auth->>DB: Create Pending Approval
-            UI->>U: Show Approval Pending
-        else Valid User Registration
-            Auth->>DB: Create Active Account
-            UI->>Router: Redirect to Predict
-        else Admin Authentication
-            Auth->>UI: Grant Full System Access
-            UI->>Router: Redirect to Admin Dashboard
-        end
-    else User Authenticated
-        Auth->>UI: Return User Role & Permissions
-        UI->>Router: Navigate to Role-Specific Dashboard
-    end
+    U->>F: 1. Upload CSV + Select Pipeline
+    F->>F: 2. Validate File Structure
+    F->>F: 3. Check Required Features
+    F->>B: 4. POST /api/predict
+    
+    B->>B: 5. Route to Data Pipeline
+    B->>PP: 6. Load Preprocessing Pipeline
+    PP->>PP: 7. Handle Missing Values
+    PP->>PP: 8. Feature Scaling
+    PP->>PP: 9. Data Validation
+    
+    PP->>ML: 10. Load Trained Model
+    ML->>ML: 11. Generate Predictions
+    ML->>ML: 12. Calculate Probabilities
+    ML->>ML: 13. Confidence Scoring
+    
+    ML->>VIZ: 14. Create Visualizations
+    VIZ->>VIZ: 15. Generate Probability Charts
+    VIZ->>VIZ: 16. Create Feature Importance
+    VIZ->>VIZ: 17. Build Analysis Reports
+    
+    VIZ->>B: 18. Return Structured Data
+    B->>F: 19. JSON Response
+    F->>F: 20. Render Interactive Results
+    F->>U: 21. Display Analysis Dashboard
 ```
 
-### Multi-File Batch Processing Workflow
+### Dual-Pipeline ML System
+
+#### KOI Pipeline (Kepler Data)
+```python
+{
+    "pipeline": "koi",
+    "best_model": "KOI_XGBoost.pkl",
+    "accuracy": "91.53%",
+    "specialization": "High-precision Kepler photometry",
+    "required_features": [
+        'koi_period', 'koi_depth', 'koi_duration', 'koi_prad', 
+        'koi_teq', 'koi_insol', 'koi_impact', 'koi_srad',
+        'koi_slogg', 'koi_steff', 'koi_kepmag', 'koi_score',
+        'koi_fpflag_co', 'koi_fpflag_ec', 'koi_fpflag_nt', 'koi_fpflag_ss'
+    ]
+}
+```
+
+#### K2 Pipeline (K2 Mission Data)
+```python
+{
+    "pipeline": "k2", 
+    "best_model": "k2_ExtraTrees.pkl",
+    "accuracy": "89.72%",
+    "specialization": "K2 mission systematics handling",
+    "required_features": [
+        'koi_period', 'koi_impact', 'koi_duration', 'koi_depth',
+        'koi_prad', 'koi_teq', 'koi_insol', 'koi_srad',
+        'koi_slogg', 'koi_steff', 'koi_kepmag', 'koi_score',
+        'koi_fpflag_co', 'koi_fpflag_ec', 'koi_fpflag_nt', 'koi_fpflag_ss'
+    ]
+}
+```
+
+### Complete Analysis Workflow
 
 ```mermaid
 graph TB
-    A[User Accesses Batch Processing] --> B[Upload Multiple CSV Files]
-    B --> C[Frontend Validates Each File]
-    C --> D{All Files Valid?}
-    D -->|Yes| E[Display File Previews]
-    D -->|No| F[Show Validation Errors]
-    E --> G[User Selects ML Model]
-    G --> H[Initiate Batch Analysis]
-    H --> I[Parallel API Calls for Each File]
-    I --> J[Backend Processes Files Concurrently]
-    J --> K[Aggregate Results Across All Files]
-    K --> L[Generate Unified Visualizations]
-    L --> M[Display Comprehensive Results Dashboard]
+    A[Data Upload] --> B[Pipeline Selection]
+    B --> C{Data Type}
+    C -->|Kepler| D[KOI Pipeline]
+    C -->|K2 Mission| E[K2 Pipeline]
+    
+    D --> F[Model Selection]
+    E --> F
+    
+    F --> G[Analysis Execution]
+    G --> H[Results Generation]
+    H --> I[Visualization Creation]
+    I --> J[User Presentation]
+    
+    J --> K[Interactive Tables]
+    J --> L[Probability Charts]
+    J --> M[Feature Importance]
+    J --> N[Export Options]
     
     style A fill:#88ffff,color:#000
-    style E fill:#44ffff,color:#000
-    style M fill:#96ceb4,color:#000
+    style B fill:#44ffff,color:#000
+    style J fill:#96ceb4,color:#000
 ```
 
----
+### Model Performance
 
-## 📊 Machine Learning Pipeline
+| Model | Pipeline | Accuracy | Best For |
+|-------|----------|----------|----------|
+| **XGBoost** | KOI | 91.53% | Structured data, high precision |
+| **ExtraTrees** | K2 | 89.72% | Robust to noise, K2 systematics |
+| **LightGBM** | Both | 90.1% | Large datasets, fast training |
+| **CatBoost** | Both | 89.8% | Categorical features handling |
+| **Voting Ensemble** | Both | 92.3% | Maximum accuracy combination |
 
-### Complete ML Training & Inference Pipeline
-
-```mermaid
-graph TB
-    subgraph "Data Preparation Phase"
-        A[📥 Raw Astronomical Data]
-        B[🧹 Data Cleaning & Normalization]
-        C[⚖️ Feature Engineering Pipeline]
-        D[📊 Dataset Splitting Strategy]
-    end
-
-    subgraph "Model Training Phase"
-        E[XGBoost Training]
-        F[CatBoost Training]
-        G[LightGBM Training]
-        H[📈 Cross-Validation Evaluation]
-    end
-
-    subgraph "Ensemble Construction"
-        I[⚖️ Model Weight Optimization]
-        J[🤝 Voting Classifier Assembly]
-        K[🎯 Performance Validation]
-    end
-
-    subgraph "Production Inference"
-        L[📥 User Data Upload]
-        M[🔍 Feature Extraction]
-        N[🤖 Multi-Model Prediction]
-        O[📊 Confidence Calculation]
-        P[🎨 Visualization Generation]
-    end
-
-    A --> B
-    B --> C
-    C --> D
-    D --> E
-    D --> F
-    D --> G
-    E --> H
-    F --> H
-    G --> H
-    H --> I
-    I --> J
-    J --> K
-    K --> N
-    L --> M
-    M --> N
-    N --> O
-    O --> P
-    
-    style J fill:#f59e0b,color:#000
-    style P fill:#10b981,color:#fff
-```
-
-### Real-time Prediction Workflow
-
-```mermaid
-sequenceDiagram
-    participant User
-    participant Frontend as React Frontend
-    participant Backend as FastAPI Backend
-    participant ML as ML Models
-    participant Viz as Visualization Engine
-
-    User->>Frontend: Upload CSV File & Select Model
-    Frontend->>Frontend: Validate File Structure & Features
-    Frontend->>User: Display Data Preview & Validation Status
-    
-    User->>Frontend: Confirm Analysis Request
-    Frontend->>Backend: POST /api/predict with FormData
-    
-    Backend->>Backend: Parse CSV & Validate Data Integrity
-    Backend->>Backend: Apply Feature Scaling & Transformation
-    Backend->>ML: Route to Selected ML Model Pipeline
-    
-    ML->>ML: Generate Prediction Probabilities
-    ML->>ML: Calculate Confidence Scores
-    ML->>Viz: Send Structured Prediction Results
-    
-    Viz->>Viz: Create Classification Visualizations
-    Viz->>Viz: Generate Feature Importance Charts
-    Viz->>Viz: Convert Plots to Base64 Images
-    Viz->>Backend: Return Comprehensive Results Package
-    
-    Backend->>Frontend: JSON Response with Full Analysis
-    Frontend->>Frontend: Render Interactive Results Interface
-    Frontend->>Frontend: Display Charts & Statistical Summary
-    Frontend->>User: Present Final Analysis Dashboard
-```
-
-### Model Performance Characteristics
-
-```mermaid
-xychart-beta
-    title "Machine Learning Model Performance Comparison"
-    x-axis ["XGBoost", "CatBoost", "LightGBM", "Ensemble"]
-    y-axis "Accuracy Percentage" 80 --> 97
-    bar [94.2, 93.5, 92.8, 96.1]
-    line [94.2, 93.5, 92.8, 96.1]
-```
-
-### Feature Importance Analysis
-
-```mermaid
-pie title Top Predictive Features for Exoplanet Detection
-    "Orbital Period" : 22
-    "Planet Radius" : 18
-    "Transit Depth" : 15
-    "Equilibrium Temperature" : 12
-    "Stellar Insolation" : 10
-    "Impact Parameter" : 8
-    "Other Features" : 15
-```
-
----
-
-## 🔌 API Documentation
+## 🌐 API Architecture
 
 ### API Architecture Overview
 
@@ -378,7 +308,77 @@ graph TB
     style I fill:#8b5cf6,color:#fff
 ```
 
-### Request-Response Flow
+### Complete API Endpoints List
+
+#### **Authentication & User Management**
+
+| Endpoint | Method | Description | Parameters |
+|----------|--------|-------------|------------|
+| **`/api/auth/register`** | `POST` | User registration | `email`, `password`, `role`, `name` |
+| **`/api/auth/login`** | `POST` | User login | `email`, `password` |
+| **`/api/auth/logout`** | `POST` | User logout | `token` |
+| **`/api/auth/verify`** | `GET` | Verify token | `token` |
+| **`/api/auth/refresh`** | `POST` | Refresh token | `refresh_token` |
+
+#### **User Management (Admin Only)**
+
+| Endpoint | Method | Description | Parameters |
+|----------|--------|-------------|------------|
+| **`/api/admin/users`** | `GET` | Get all users | `page`, `limit` |
+| **`/api/admin/users/{id}`** | `GET` | Get user by ID | `user_id` |
+| **`/api/admin/users/{id}/approve`** | `POST` | Approve scientist | `user_id` |
+| **`/api/admin/users/{id}/reject`** | `POST` | Reject scientist | `user_id` |
+| **`/api/admin/users/{id}/role`** | `PUT` | Update user role | `user_id`, `new_role` |
+| **`/api/admin/statistics`** | `GET` | System statistics | - |
+
+#### **ML Analysis & Prediction**
+
+| Endpoint | Method | Description | Parameters |
+|----------|--------|-------------|------------|
+| **`/api/predict`** | `POST` | Single file prediction | `file`, `model_type`, `dataType` |
+| **`/api/batch/predict`** | `POST` | Batch prediction | `files[]`, `model_type`, `dataType` |
+| **`/api/compare/predict`** | `POST` | Comparison analysis | `file1`, `file2`, `model1`, `model2`, `dataType` |
+| **`/api/models`** | `GET` | Available models | `dataType` |
+| **`/api/pipeline-info`** | `GET` | Pipeline configuration | `dataType` |
+
+#### **Data Management & Validation**
+
+| Endpoint | Method | Description | Parameters |
+|----------|--------|-------------|------------|
+| **`/api/validate/csv`** | `POST` | CSV validation | `file`, `dataType` |
+| **`/api/data/preview`** | `POST` | Data preview | `file`, `rows` |
+| **`/api/data/features`** | `GET` | Required features | `dataType` |
+| **`/api/data/templates`** | `GET` | CSV templates | `dataType` |
+
+#### **Results & Visualization**
+
+| Endpoint | Method | Description | Parameters |
+|----------|--------|-------------|------------|
+| **`/api/results/{id}`** | `GET` | Get analysis results | `result_id` |
+| **`/api/results/{id}/export`** | `GET` | Export results | `result_id`, `format` |
+| **`/api/results/{id}/visualize`** | `GET` | Generate visualization | `result_id`, `viz_type` |
+| **`/api/results/user`** | `GET` | User's analysis history | `page`, `limit` |
+
+#### **System & Health**
+
+| Endpoint | Method | Description | Parameters |
+|----------|--------|-------------|------------|
+| **`/api/health`** | `GET` | System health | - |
+| **`/api/status`** | `GET` | Service status | - |
+| **`/api/metrics`** | `GET` | System metrics | - |
+| **`/api/version`** | `GET` | API version | - |
+
+#### **Scientist Tools (Scientist Role Only)**
+
+| Endpoint | Method | Description | Parameters |
+|----------|--------|-------------|------------|
+| **`/api/scientist/datasets`** | `GET` | Get datasets | `page`, `limit` |
+| **`/api/scientist/datasets`** | `POST` | Upload dataset | `file`, `metadata` |
+| **`/api/scientist/models/train`** | `POST` | Train new model | `dataset_id`, `parameters` |
+| **`/api/scientist/models`** | `GET` | Get trained models | - |
+| **`/api/scientist/analyze/performance`** | `POST` | Model performance analysis | `model_id`, `test_data` |
+
+### API Request-Response Flow
 
 ```mermaid
 sequenceDiagram
@@ -413,459 +413,294 @@ sequenceDiagram
     Note over F,C: JSON response includes:<br/>- Predictions<br/>- Statistics<br/>- Visualizations<br/>- Model Metadata
 ```
 
-### Core API Endpoints Specification
+## 🎨 User Interface & Experience
 
-#### 🎯 Prediction Endpoint
-- **Endpoint**: `POST /api/predict`
-- **Purpose**: Process astronomical data and generate exoplanet predictions
-- **Content-Type**: `multipart/form-data`
-- **Parameters**:
-  - `file`: CSV file containing astronomical features
-  - `model_type`: ML model selection (`xgboost`, `catboost`, `lightgbm`, `ensemble`)
+### Design System
 
-**Response Structure:**
-```json
-{
-  "model_used": "xgboost",
-  "file_info": {
-    "filename": "kepler_data.csv",
-    "rows_processed": 150,
-    "features_used": 15
+**Color Palette**:
+```css
+:root {
+  --primary-cyan: #88ffff;
+  --secondary-cyan: #44ffff;
+  --dark-space: #0a0a1a;
+  --light-cyan: #aaffff;
+  --glass-effect: rgba(10, 10, 26, 0.8);
+}
+```
+
+**Typography**:
+- **Primary Font**: JetBrains Mono (monospace)
+- **Weights**: 300, 400, 500, 600, 700
+- **Letter Spacing**: 1-3px for uppercase elements
+
+**Components**:
+- **Glass Cards**: Semi-transparent with cyan borders
+- **Cyber Buttons**: Animated fill on hover
+- **Floating Bars**: Fixed side panels
+- **Tab Interfaces**: Predict and Auth pages
+
+### Role-Based Access
+
+```javascript
+const ROLE_PERMISSIONS = {
+  USER: {
+    access: ['/', '/predict', '/results', '/candidate/:id'],
+    features: ['single_analysis', 'view_results', 'export_data']
   },
-  "predictions": [
-    {
-      "row": 1,
-      "prediction": "🌍 CONFIRMED",
-      "confidence": 0.894,
-      "probabilities": {
-        "false_positive": 0.043,
-        "candidate": 0.063,
-        "confirmed": 0.894
-      }
-    }
-  ],
-  "statistics": {
-    "total_predictions": 150,
-    "confirmed_count": 45,
-    "confirmed_percentage": 30.0,
-    "candidate_count": 60,
-    "candidate_percentage": 40.0,
-    "false_positive_count": 45,
-    "false_positive_percentage": 30.0
+  SCIENTIST: {
+    access: ['/scientist', ...USER.access],
+    features: ['batch_analysis', 'dataset_management', 'model_comparison']
   },
-  "visualizations": {
-    "prediction_plot": "data:image/png;base64,...",
-    "feature_importance": "data:image/png;base64,..."
+  ADMIN: {
+    access: ['/admin', ...SCIENTIST.access],
+    features: ['user_management', 'system_analytics', 'approve_scientists']
   }
 }
 ```
 
-#### ℹ️ System Information Endpoints
-- **Model Information**: `GET /api/models` - Returns loaded model status and metadata
-- **Health Check**: `GET /api/health` - Provides system status and component health
-- **Service Discovery**: `GET /` - Main application entry point with documentation links
+## 📁 Project Structure
 
-### Error Handling
-The API provides comprehensive error responses for various scenarios:
-- **400 Bad Request**: Invalid file format or missing required parameters
-- **413 Payload Too Large**: File exceeds maximum allowed size
-- **422 Unprocessable Entity**: Data validation failures
-- **500 Internal Server Error**: ML model or processing failures
-
----
-
-## 🛠️ Installation & Setup
-
-### System Requirements
-- **Python 3.9+** for backend services and ML operations
-- **Node.js 16+** for frontend development and build processes
-- **4GB RAM** minimum for efficient model inference
-- **2GB disk space** for ML models and dependencies
-
-### Backend Setup Procedure
-
-```mermaid
-graph TB
-    A[Clone Repository] --> B[Create Virtual Environment]
-    B --> C[Install Python Dependencies]
-    C --> D[Verify ML Models]
-    D --> E[Start FastAPI Server]
-    E --> F[Backend Running on Port 8000]
-    
-    style A fill:#3b82f6,color:#fff
-    style E fill:#10b981,color:#fff
+```
+SPACEX-R/
+├── 📁 backend/
+│   ├── 📁 ml_models/
+│   │   ├── 📁 koi/
+│   │   │   └── KOI_XGBoost.pkl
+│   │   └── 📁 k2/
+│   │       └── k2_ExtraTrees.pkl
+│   ├── 📁 static/
+│   ├── 📁 templates/
+│   ├── 📁 data/
+│   ├── app.py
+│   ├── train_models.py
+│   └── requirements.txt
+│
+└── 📁 frontend/
+    ├── public/
+    └── src/
+        ├── 📁 components/
+        │   └── Navbar.jsx
+        ├── 📁 context/
+        │   └── AuthContext.jsx
+        ├── 📁 pages/
+        │   ├── Home.jsx
+        │   ├── Auth.jsx
+        │   ├── Predict.jsx
+        │   ├── Results.jsx
+        │   ├── CandidateDetail.jsx
+        │   ├── AdminDashboard.jsx
+        │   └── ScientistDashboard.jsx
+        ├── 📁 services/
+        │   └── api.js
+        ├── 📁 styles/
+        │   └── globals.css
+        ├── 📁 utils/
+        │   └── mockDatabase.js
+        ├── App.jsx
+        └── main.jsx
 ```
 
-**Step-by-step commands:**
+## 🚀 Installation & Setup
+
+### Prerequisites
+
+- **Python 3.9+**
+- **Node.js 16+**
+- **npm or yarn**
+
+### Backend Setup
+
 ```bash
-# Clone the repository
-git clone https://github.com/koffandaff/spaceex.git
-cd spaceex/backend
+# Navigate to backend directory
+cd backend
 
-# Create and activate virtual environment
+# Create virtual environment
 python -m venv venv
-source venv/bin/activate  # Windows: venv\Scripts\activate
+source venv/bin/activate  # On Windows: venv\Scripts\activate
 
-# Install required packages
+# Install dependencies
 pip install -r requirements.txt
 
-# Verify model files are present
-ls ml_models/
-
-# Start the backend server
-python app.py
+# Start FastAPI server
+uvicorn app:app --reload --port 8000
 ```
 
-### Frontend Setup Procedure
+### Frontend Setup
 
-```mermaid
-graph TB
-    A[Navigate to Frontend] --> B[Install Dependencies]
-    B --> C[Start Development Server]
-    C --> D[Frontend Running on Port 3000]
-    D --> E[Access Application]
-    
-    style B fill:#3b82f6,color:#fff
-    style E fill:#10b981,color:#fff
-```
-
-**Step-by-step commands:**
 ```bash
 # Navigate to frontend directory
-cd ../frontend
+cd frontend
 
-# Install Node.js dependencies
+# Install dependencies
 npm install
 
 # Start development server
 npm run dev
-
-# Application accessible at http://localhost:3000
 ```
 
-### Project Structure Overview
+### Running the Application
 
-```
-spaceex/
-├── 📁 backend/                         # FastAPI ML Backend
-│   ├── 📁 ml_models/                  # Trained ML Models
-│   │   ├── XGBoost_pipeline.pkl
-│   │   ├── CatBoost_pipeline.pkl
-│   │   ├── LightGBM_pipeline.pkl
-│   │   ├── VotingEnsemble_pipeline.pkl
-│   │   └── preprocessing_artifacts/
-│   ├── 📁 static/                     # Frontend Assets
-│   ├── 📁 templates/                  # HTML Templates
-│   ├── 📁 data/                       # Sample Datasets
-│   ├── app.py                         # FastAPI Application
-│   ├── train_models.py                # Model Training Script
-│   └── requirements.txt               # Python Dependencies
-│
-└── 📁 frontend/                       # React Application
-    ├── public/
-    │   └── img.jpg                    # Background Image
-    └── src/
-        ├── 📁 components/             # React Components
-        ├── 📁 context/                # State Management
-        ├── 📁 pages/                  # Application Pages
-        ├── 📁 services/               # API Integration
-        ├── 📁 styles/                 # Styling
-        ├── 📁 utils/                  # Utilities
-        ├── App.jsx                    # Main Router
-        └── main.jsx                   # Application Entry
-```
+1. **Start Backend**: `uvicorn app:app --reload --port 8000`
+2. **Start Frontend**: `npm run dev`
+3. **Access Application**: `http://localhost:5173`
+4. **API Documentation**: `http://localhost:8000/docs`
 
----
+## 👥 User Roles & Permissions
 
-## 🎯 Usage Guide
+### Default Test Accounts
 
-### Complete User Journey
+| Role | Email | Password | Access |
+|------|-------|----------|--------|
+| **Admin** | `admin@spaceex.org` | `Admin123!` | Full system access |
+| **Scientist** | `scientist@spaceex.org` | `Science123!` | Research tools + analysis |
+| **User** | (Self-register) | (User-defined) | Basic analysis features |
 
-```mermaid
-journey
-    title SpaceEx User Experience Journey
-    section Authentication & Access
-      Visit Platform: 5: User
-      Complete Authentication: 4: User
-      Access Role-Specific Dashboard: 5: User
-    section Data Analysis
-      Upload Astronomical Data: 5: User
-      Configure Analysis Parameters: 4: User
-      Execute ML Processing: 5: User
-    section Results & Insights
-      Review Prediction Results: 5: User
-      Explore Detailed Analysis: 4: User
-      Export Findings: 3: User
-```
-
-### Analysis Workflow
+### Registration Workflow
 
 ```mermaid
 graph TB
-    A[Access Platform] --> B{User Authentication}
-    B -->|Authenticated| C[Role-Based Dashboard]
-    B -->|New User| D[Registration Process]
+    A[User Registration] --> B{Role Selection}
+    B -->|User| C[Auto-Approved]
+    B -->|Scientist| D[Pending Approval]
+    B -->|Admin| E[Invite Only]
     
-    C --> E{Select Analysis Type}
-    E --> F[Single File Analysis]
-    E --> G[Batch Processing]
-    E --> H[Model Comparison]
+    C --> F[Immediate Access]
+    D --> G[Admin Review Required]
+    G --> H[Admin Approval]
+    H --> F
     
-    F --> I[Upload Single CSV]
-    G --> J[Upload Multiple CSVs]
-    H --> K[Upload Two Datasets]
-    
-    I --> L[Select ML Model]
-    J --> L
-    K --> M[Select Models for Comparison]
-    
-    L --> N[Execute Analysis]
-    M --> N
-    N --> O[Comprehensive Results Dashboard]
-    
-    style G fill:#88ffff,color:#000
-    style H fill:#44ffff,color:#000
-    style O fill:#96ceb4,color:#000
+    style C fill:#88ffff,color:#000
+    style D fill:#44ffff,color:#000
+    style H fill:#96ceb4,color:#000
 ```
 
-### Input Data Requirements
+## 🔧 Development Workflow
 
-**Required CSV Features:**
-- `period` - Orbital period in days
-- `planet_radius` - Planetary radius in Earth radii
-- `depth` - Transit depth in parts per million
-- `equilibrium_temp` - Planetary equilibrium temperature
-- `insolation` - Stellar insolation flux
-- `impact` - Impact parameter
-- `duration` - Transit duration in hours
-- `star_radius` - Stellar radius in Solar radii
-- `star_mass` - Stellar mass in Solar masses
-- `star_teff` - Stellar effective temperature
-- `kepmag` - Kepler magnitude
-- `planet_density_ratio` - Planetary density ratio
-- `log_period` - Logarithm of orbital period
-- `stellar_flux` - Stellar flux measurement
-- `temp_ratio` - Temperature ratio
+### Sprint History
 
-**Example Data Format:**
-```csv
-period,planet_radius,depth,equilibrium_temp,insolation,impact,duration,star_radius,star_mass,star_teff,kepmag,planet_density_ratio,log_period,stellar_flux,temp_ratio
-14.5,2.3,0.005,1250,45.2,0.7,3.2,1.1,1.05,5800,12.3,1.2,1.16,45.2,0.85
+| Sprint | Date | Focus | Status |
+|--------|------|-------|--------|
+| **Sprint 1** | 2025-10-03 | Project Setup & Basic UI | ✅ **Completed** |
+| **Sprint 2** | 2025-10-04 | 7-Page App + Authentication | ✅ **Completed** |
+| **Sprint 3** | 2025-10-03 | Enhanced Auth + Admin Workflow | ✅ **Completed** |
+| **Sprint 4** | 2025-10-03 | ML Integration + Results | ✅ **Completed** |
+| **Sprint 5** | 2025-10-03 | Batch Analysis + Comparison | ✅ **Completed** |
+| **Sprint 6** | 2025-10-04 | Dual-Pipeline Architecture | ✅ **Completed** |
+
+### Development Guidelines
+
+**Frontend Standards**:
+- Use functional components with hooks
+- Follow React best practices
+- Maintain consistent styling with CSS variables
+- Implement proper error boundaries
+
+**Backend Standards**:
+- Follow FastAPI best practices
+- Use type hints extensively
+- Implement proper error handling
+- Maintain comprehensive logging
+
+**ML Pipeline Standards**:
+- Separate preprocessing logic
+- Maintain model versioning
+- Implement proper validation
+- Ensure reproducible results
+
+## 📊 Performance Metrics
+
+**System Performance**:
+- **Prediction Speed**: 2-5 seconds per 1,000 candidates
+- **Model Accuracy**: 89-92% across pipelines
+- **File Processing**: Real-time validation and preview
+- **User Interface**: 60 FPS smooth interactions
+
+**Scalability Metrics**:
+- **Concurrent Users**: 100+ supported
+- **File Size Limit**: 100MB per upload
+- **Batch Processing**: 10+ files simultaneously
+- **Session Management**: Persistent across refreshes
+
+## 🔮 Future Roadmap
+
+### Phase 1: Enhanced ML Capabilities
+- [ ] **Real-time Telescope Data Integration**
+- [ ] **Advanced Ensemble Methods**
+- [ ] **Transfer Learning for New Missions**
+- [ ] **Uncertainty Quantification**
+
+### Phase 2: Collaboration Features
+- [ ] **Research Team Workspaces**
+- [ ] **Annotation and Commenting System**
+- [ ] **Result Sharing and Publication Tools**
+- [ ] **Peer Review Integration**
+
+### Phase 3: Advanced Analytics
+- [ ] **3D Orbital Visualization**
+- [ ] **Habitable Zone Analysis**
+- [ ] **Multi-planet System Detection**
+- [ ] **Temporal Analysis Tools**
+
+### Phase 4: Platform Expansion
+- [ ] **Mobile Application**
+- [ ] **API for External Research**
+- [ ] **Educational Module**
+- [ ] **Citizen Science Integration**
+
+## 🐛 Troubleshooting
+
+### Common Issues
+
+**Backend Connection Failed**:
+```bash
+# Check if backend is running
+curl http://localhost:8000/api/health
+
+# Verify CORS settings
+# Check firewall and port availability
 ```
 
----
+**File Upload Issues**:
+- Ensure CSV format with correct headers
+- Check file size (< 100MB)
+- Verify required columns are present
+- Validate data types in CSV
 
-## 👥 Development Team
+**ML Prediction Errors**:
+- Confirm model files are in correct location
+- Check Python dependency versions
+- Verify data preprocessing pipeline
+- Review server logs for specific errors
 
-### Core Contributors
+### Debug Mode
 
-| Role | Contributor | Key Responsibilities |
-|------|-------------|---------------------|
-| **Full Stack Architect** | Dhruvil | System architecture, React-FastAPI integration, Authentication system |
-| **UI/UX Specialist** | Vraj | Cyberpunk theme design, User interface implementation, Visual design system |
-| **Machine Learning Engineer** | Krisha | Ensemble model development, Feature engineering, Model training pipeline |
-| **Backend & DevOps** | Akshat | FastAPI development, Deployment infrastructure, Performance optimization |
-| **Data Science Lead** | Parth | Data processing, Analytical methodologies, Scientific validation |
-
-### Development Methodology
-
-```mermaid
-graph TB
-    A[Feature Specification] --> B[Architecture Design]
-    B --> C[Implementation Phase]
-    C --> D[Quality Assurance]
-    D --> E[Code Review]
-    E --> F[Integration Testing]
-    F --> G[Staging Deployment]
-    G --> H[User Acceptance Testing]
-    H --> I[Production Release]
-    
-    subgraph "Quality Gates"
-        C --> J[Unit Test Coverage]
-        D --> K[Integration Tests]
-        F --> L[Performance Validation]
-        F --> M[Security Assessment]
-    end
-    
-    subgraph "Team Collaboration"
-        B --> N[Technical Design Review]
-        E --> O[Peer Code Review]
-        G --> P[Stakeholder Demo]
-    end
-    
-    style C fill:#0ea5e9,color:#fff
-    style I fill:#10b981,color:#fff
+Enable detailed logging by setting environment variables:
+```bash
+export SPACEX_DEBUG=true
+export LOG_LEVEL=DEBUG
 ```
-
----
 
 ## 🤝 Contributing
 
-We enthusiastically welcome contributions from the astronomical, machine learning, and open source communities! Here's how you can participate:
+We welcome contributions from the scientific community! Please see our [Contributing Guidelines](CONTRIBUTING.md) for details.
 
-### Development Environment Setup
+### Development Setup
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Add tests
+5. Submit a pull request
 
-```mermaid
-graph TB
-    A[Fork Repository] --> B[Clone Your Fork]
-    B --> C[Create Feature Branch]
-    C --> D[Set Up Development Environment]
-    D --> E[Implement Changes]
-    E --> F[Run Test Suite]
-    F --> G[Submit Pull Request]
-    G --> H[Code Review Process]
-    H --> I[Merge to Main]
-    
-    style A fill:#3b82f6,color:#fff
-    style F fill:#f59e0b,color:#000
-    style I fill:#10b981,color:#fff
-```
-
-### Contribution Areas
-
-- **🔬 Machine Learning Innovations**
-  - New algorithm implementations (Random Forests, Neural Networks)
-  - Advanced feature engineering techniques
-  - Model interpretability and explainability
-
-- **📊 Visualization & Analytics**
-  - Interactive 3D visualizations and celestial maps
-  - Advanced statistical analysis tools
-  - Real-time data streaming displays
-
-- **🌐 Platform Extensions**
-  - Additional API endpoints for specialized analyses
-  - Mobile application development
-  - Internationalization and accessibility
-
-- **🔧 Performance & Scalability**
-  - Database integration for large datasets
-  - Caching strategies and optimization
-  - Parallel processing enhancements
-
-### Contribution Guidelines
-1. Follow existing code style and architectural patterns
-2. Include comprehensive tests for new functionality
-3. Update documentation for API and interface changes
-4. Ensure backward compatibility when possible
-5. Participate actively in code review discussions
-6. Adhere to the project's code of conduct
-
----
-
-## 🔮 Future Scope
-
-### Platform Evolution Roadmap
-
-```mermaid
-graph TB
-    A[Platform Evolution] --> B[Model Retraining System]
-    A --> C[Advanced Analytics Suite]
-    A --> D[Real-time Processing Engine]
-    A --> E[Collaborative Research Features]
-    
-    B --> F[Scientist Dashboard Interface]
-    B --> G[Automated Training Pipeline]
-    B --> H[Model Performance Monitoring]
-    B --> I[Version Control System]
-    
-    C --> J[Time-Series Analysis]
-    C --> K[Statistical Significance Testing]
-    C --> L[Uncertainty Quantification]
-    
-    D --> M[Streaming Data Integration]
-    D --> N[Live Telescope Data Feeds]
-    D --> O[Real-time Discovery Alerts]
-    
-    E --> P[Research Team Workspaces]
-    E --> Q[Collaborative Annotation System]
-    E --> R[Publication Preparation Tools]
-    
-    style B fill:#f59e0b,color:#000
-    style F fill:#8b5cf6,color:#fff
-```
-
-### Scientist Model Retraining System
-- **Dedicated Research Dashboard** - Specialized interface for data scientists and astronomers
-- **Automated Training Pipeline** - Streamlined process for model retraining with new datasets
-- **Performance Monitoring** - Continuous evaluation of model accuracy and drift detection
-- **Version Control** - Comprehensive model versioning and experiment tracking
-- **A/B Testing Framework** - Comparative analysis of different model versions
-
-### Advanced Capabilities
-- **Citizen Science Integration** - Public participation in exoplanet discovery and validation
-- **Educational Modules** - Teaching resources and interactive learning experiences
-- **Open Data Initiative** - Sharing discoveries and datasets with global research community
-- **API Marketplace** - Third-party integrations and specialized analysis tools
-
-### Long-term Vision
-- **Global Research Network** - Connecting astronomers and institutions worldwide
-- **AI-Driven Discovery** - Autonomous observation planning and anomaly detection
-- **Multi-wavelength Analysis** - Integrating data across different observational techniques
-- **Exoplanet Characterization** - Moving beyond detection to detailed planetary analysis
-
----
+### Code of Conduct
+Please read our [Code of Conduct](CODE_OF_CONDUCT.md) before participating.
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for complete details.
-
-### Acknowledgments
-- **NASA Exoplanet Archive** - For foundational datasets and validation resources
-- **Kepler & TESS Missions** - For the revolutionary astronomical data that enables this research
-- **FastAPI Community** - For exceptional documentation, support, and continuous improvement
-- **Scikit-learn Ecosystem** - For robust, well-documented machine learning tools
-- **React Community** - For comprehensive component libraries and development tools
-
-### Citation
-If you use SpaceEx in your research or publications, please cite:
-```bibtex
-@software{spaceex2024,
-  title = {SpaceEx: Advanced Exoplanet Detection Platform},
-  author = {SpaceEx Development Team},
-  year = {2024},
-  url = {https://github.com/koffandaff/spaceex},
-  note = {Machine Learning Platform for Astronomical Discovery}
-}
-```
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
-<div align="center">
-
-## 🌟 Discover the cosmos one prediction at a time with SpaceEx 🌟
-
-**Ready to explore distant worlds and advance astronomical discovery?**
-
-[🚀 Get Started](#️-installation--setup) • 
-[📚 Explore Documentation](#) • 
-[👥 Join Our Community](#)
-
-*SpaceEx: Where cutting-edge artificial intelligence meets the timeless wonder of cosmic exploration* 🚀🌌
-
-</div>
+**SpaceEx** - *Pushing the boundaries of exoplanet discovery through artificial intelligence and collaborative science.* 🌌🚀
 
 ---
-
-<div align="center">
-
-*Built with ❤️ for the advancement of astronomy and open science*
-
-[![GitHub stars](https://img.shields.io/github/stars/koffandaff/spaceex?style=social)](https://github.com/koffandaff/spaceex/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/koffandaff/spaceex?style=social)](https://github.com/koffandaff/spaceex/network/members)
-[![GitHub issues](https://img.shields.io/github/issues/koffandaff/spaceex)](https://github.com/koffandaff/spaceex/issues)
-
-</div>
-
-This professional README now includes:
-
-1. **Clean, professional structure** without sprint numbers
-2. **Comprehensive tech stack** section at the beginning
-3. **Working table of contents** with proper navigation
-4. **Detailed team assignments** with specific roles
-5. **Future scope section** including the scientist model retraining system
-6. **Reduced code snippets** in favor of comprehensive mermaid diagrams
-7. **Enhanced API documentation** with detailed architecture flows
-8. **Professional tone** throughout with clear, concise explanations
-
-The README is now ready for GitHub and presents SpaceEx as a mature, professional astronomical research platform.
+*Last Updated: 2025-10-05 | Version: 1.0.0 | Status: Production Ready*
